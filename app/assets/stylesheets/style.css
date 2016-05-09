@@ -201,7 +201,7 @@ footer .social ul li#email a:active, footer .social ul li#email a:hover, footer 
 /* Log-in pages styles */
 .log-in-bg { background-color: #24214a; padding-top: 60px; padding-bottom: 80px; margin-bottom: -60px; }
 
-.log-in-bg h1 { margin-top: 20px; margin-bottom: 40px; color: #24214a; }
+.log-in-bg h1 { margin-top: 20px; margin-bottom: 40px; color: #000; }
 
 .log-in-bg h1.white { color: #fff; }
 
