@@ -1,0 +1,127 @@
+<div class="user-profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p id="notice"><%= notice %></p>
+      </div>
+    </div>
+
+    <div class="row user-info">
+      <div class="col-4">
+        <img src="http://lorempixel.com/<%= 250 + rand(2) + rand(2)  + rand(2) + rand(2) %>/<%= 250 + rand(2) + rand(2) + rand(2) + rand(2)  %>/people/" alt="Person" class="img-responsive profile-picture" />
+        <% if @user.id = current_user.id %>
+        <%= link_to 'Edit', edit_user_path(@user), class:"btn" %>
+        <%end%>
+      </div>
+      <div class="col-8">
+        <h1><%= @user.user_name %></h1>
+        <p class="bold"><%= @user.profile_message %></p>
+        <div class="row">
+          <div class="col-6">
+            <h3>Genres</h3>
+            <ul>
+              <% if @user.has_fantasy == 1 %>
+                <li>Fantasy</li>
+              <% end %>
+              <% if @user.has_romance == 1 %>
+                <li>Romance</li>
+              <% end %>
+              <% if @user.has_horror == 1 %>
+                <li>Horror</li>
+              <% end %>
+              <% if @user.has_comedy == 1 %>
+                <li>Comedy</li>
+              <% end %>
+              <% if @user.has_crime == 1 %>
+                <li>Crime</li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3>Services</h3>
+            <ul>
+              <% if @user.is_reader == 1 %>
+              <li>Beta Reader</li>
+              <% end %>
+              <% if @user.is_editor == 1 %>
+              <li>Editor</li>
+              <% end %>
+              <% if @user.is_writer == 1 %>
+              <li>Writer</li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+        <p class="description">Stare at ceiling light find something else more interesting love to play with owner's hair tie, and human is washing you why halp oh the horror flee scratch hiss bite. Spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Eat owner's food groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! sit on the laptop. Stares at human while pushing stuff off a table get video posted to internet for chasing red dot but stare at wall turn and meow stare at wall some more meow again continue staring yet toy mouse squeak roll over, yet attack feet, swat at dog, and love to play with owner's hair tie.</p>
+        <a href="#" class="btn-bright">Request Contact</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="center">Recent Works</h2>
+      </div>
+    </div>
+
+    <div class="row recent-works">
+      <div class="col-4 work">
+        <h3 class="center">Project 1</h3>
+        <p>Favor packaging over toy. Drink water out of the faucet when in doubt, wash. Poop in litter box, scratch the walls purr for no reason meow all night having their mate disturbing sleeping humans throwup on your pillow cat is love, cat is life. Scratch leg; meow for can opener to feed me purr while eating.</p>
+        <a href="#" class="btn">See More</a>
+      </div>
+      <div class="col-4 work">
+        <h3 class="center">Project 2</h3>
+        <p>Favor packaging over toy. Drink water out of the faucet when in doubt, wash. Poop in litter box, scratch the walls purr for no reason meow all night having their mate disturbing sleeping humans throwup on your pillow cat is love, cat is life. Scratch leg; meow for can opener to feed me purr while eating.</p>
+        <a href="#" class="btn">See More</a>
+      </div>
+      <div class="col-4 work">
+        <h3 class="center">Project 3</h3>
+        <p>Favor packaging over toy. Drink water out of the faucet when in doubt, wash. Poop in litter box, scratch the walls purr for no reason meow all night having their mate disturbing sleeping humans throwup on your pillow cat is love, cat is life. Scratch leg; meow for can opener to feed me purr while eating.</p>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="center">Reviews</h2>
+      </div>
+    </div>
+
+    <div class="row reviews">
+      <div class="row review">
+        <div class="col-3">
+          <img src="http://lorempixel.com/<%= 250 + rand(2) + rand(2)  + rand(2) + rand(2) %>/<%= 250 + rand(2) + rand(2) + rand(2) + rand(2)  %>/people/" alt="Person" class="img-responsive profile-picture" />
+        </div>
+        <div class="col-9">
+          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+          <p class="review-body">Human is washing you why halp oh the horror flee scratch hiss bite meow for food, then when human fills food dish, take a few bites of food and continue meowing when in doubt, wash put toy mouse in food bowl run out of litter box at full speed stare at ceiling light lounge in doorway white cat sleeps on a black shirt. Tuxedo cats always looking dapper attack dog, run away and pretend to be victim so always hungry.</p>
+        </div>
+      </div>
+      <div class="row review">
+        <div class="col-3">
+          <img src="http://lorempixel.com/<%= 250 + rand(2) + rand(2)  + rand(2) + rand(2) %>/<%= 250 + rand(2) + rand(2) + rand(2) + rand(2)  %>/people/" alt="Person" class="img-responsive profile-picture" />
+        </div>
+        <div class="col-9">
+          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+          <p class="review-body"> Find empty spot in cupboard and sleep all day stare at wall turn and meow stare at wall some more meow again continue staring chew on cable, sit by the fire so love to play with owner's hair tie yet you call this cat food? and chase the pig around the house. Lick yarn hanging out of own butt rub face on everything. If it fits, i sits. Lick the other cats lounge in doorway hopped up on catnip. Stare at ceiling light.</p>
+        </div>
+      </div>
+      <div class="row review">
+        <div class="col-3">
+          <img src="http://lorempixel.com/<%= 250 + rand(2) + rand(2)  + rand(2) + rand(2) %>/<%= 250 + rand(2) + rand(2) + rand(2) + rand(2)  %>/people/" alt="Person" class="img-responsive profile-picture" />
+        </div>
+        <div class="col-9">
+          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+          <p class="review-body">If it smells like fish eat as much as you wish. Thug cat my left donut is missing, as is my right and meowzer! damn that dog for dream about hunting birds. Rub face on owner thug cat chase laser, for climb leg. Eat grass, throw it back up unwrap toilet paper burrow under covers, and meow for food, then when human fills food dish.</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- <%= link_to 'Back', users_path %> -->
+
+  </div>
+</div>

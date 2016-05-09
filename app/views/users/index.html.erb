@@ -1,0 +1,136 @@
+<p id="notice"><%= notice %></p>
+
+<div class="search-results">
+  <div class="container clearfix">
+    <div class="row">
+      <div class="col-12">
+        <h1>Search Results</h1>
+      </div>
+    </div>
+
+    <% users = User.all %>
+
+    <div class="results">
+      <% users.each do |user| %>
+      <div class="row person">
+        <div class="col-3">
+          <img src="http://lorempixel.com/<%= 498 + rand(2) + rand(2)  + rand(2) + rand(2) %>/<%= 498 + rand(2) + rand(2) + rand(2) + rand(2)  %>/people/" alt="Person" class="img-responsive profile" />
+        </div>
+        <div class="col-9">
+          <h2><%= user.user_name %></h2>
+          <p class="bold"><%= user.profile_message %></p>
+          <div class="row">
+            <div class="col-4 mobile-left">
+              <h3>Services</h3>
+              <ul>
+                <% if user.is_reader == 1 %>
+                <li>Beta Reader</li>
+                <% end %>
+                <% if user.is_editor == 1 %>
+                <li>Editor</li>
+                <% end %>
+                <% if user.is_writer == 1 %>
+                <li>Writer</li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="col-4 mobile-left">
+              <h3>Favorite Genres</h3>
+              <ul>
+                <% if user.has_fantasy == 1 %>
+                  <li>Fantasy</li>
+                <% end %>
+                <% if user.has_romance == 1 %>
+                  <li>Romance</li>
+                <% end %>
+                <% if user.has_horror == 1 %>
+                  <li>Horror</li>
+                <% end %>
+                <% if user.has_comedy == 1 %>
+                  <li>Comedy</li>
+                <% end %>
+                <% if user.has_crime == 1 %>
+                  <li>Crime</li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h3 class="center">Details</h3>
+              <ul>
+                <li><%= link_to "Profile", user, class:"btn" %></li>
+                <li><a href="#" class="btn-bright">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+
+    </div>
+
+    <div class="sidebar-search">
+      <div class="search-form">
+        <form action="search.php">
+          <div class="row">
+            <h2 class="center">Search</h2>
+            <div class="center criteria">
+              <p>What are you looking for?</p>
+              <div class="service-fields fields">
+                <input type="radio" name="service" value="read" checked> A Beta Reader<br>
+                <input type="radio" name="service" value="edit"> An Editor<br>
+                <input type="radio" name="service" value="writer"> A Writer
+              </div>
+            </div>
+            <div class="center criteria">
+              <p>What's your style?</p>
+              <div class="genre-fields fields">
+                <input type="checkbox" name="genre" value="Fantasy"> Fantasy<br>
+                <input type="checkbox" name="genre" value="Romance"> Romance<br>
+                <input type="checkbox" name="genre" value="Horror"> Horror<br>
+                <input type="checkbox" name="genre" value="Comedy"> Comedy<br>
+                <input type="checkbox" name="genre" value="Crime"> Crime
+              </div>
+            </div>
+            <div class="center criteria">
+              <p>Length of Work</p>
+              <div class="length-fields fields">
+                <input type="radio" name="length" value="short" checked> 1,000 - 20,000 words<br>
+                <input type="radio" name="length" value="medium"> 20,000 - 40,000 words<br>
+                <input type="radio" name="length" value="long"> 40,000 - 60,000 words<br>
+                <input type="radio" name="length" value="longest"> 60,000+ words
+              </div>
+            </div>
+          </div>
+
+          <p class="center"><input type="submit" value="Search" class="submit btn"></p>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.user_name %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+
+<!-- <%= link_to 'New User', new_user_path %> -->

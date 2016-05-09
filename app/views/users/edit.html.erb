@@ -1,0 +1,92 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-12">
+      <h1>Editing Profile</h1>
+    </div>
+  </div>
+
+  <%= form_for(@user) do |f| %>
+
+  <div class="row">
+    <div class="col-6">
+      <h2>Account Details</h2>
+      <div class="field">
+        <!-- <%= f.label :user_name %><br> -->
+        <%= f.text_field :user_name, class:"form-control", placeholder:"Username" %>
+      </div>
+      <div class="field">
+        <!-- <%= f.label :password %><br> -->
+        <%= f.password_field :password, class:"form-control", placeholder:"Password" %>
+      </div>
+      <div class="field">
+        <!-- <%= f.label :password_confirmation %><br> -->
+        <%= f.password_field :password_confirmation, class:"form-control", placeholder:"Confirm password" %>
+      </div>
+      <div class="field">
+        <!-- <%= f.label :email %><br> -->
+        <%= f.text_field :email, class:"form-control", placeholder:"Email address" %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6">
+          <div class="service-fields fields">
+            <h2>Services</h2>
+            <%= f.check_box(:is_reader) %>
+            <%= label_tag(:is_reader, "Beta Reader") %><br><br>
+            <%= f.check_box(:is_editor) %>
+            <%= label_tag(:is_editor, "Editor") %><br><br>
+            <%= f.check_box(:is_writer) %>
+            <%= label_tag(:is_writer, "Writer") %><br><br>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="genre-fields fields">
+            <h2>Preferred Genres</h2>
+            <%= f.check_box(:has_fantasy) %>
+            <%= label_tag(:has_fantasy, "Fantasy") %><br><br>
+            <%= f.check_box(:has_romance) %>
+            <%= label_tag(:has_romance, "Romance") %><br><br>
+            <%= f.check_box(:has_horror) %>
+            <%= label_tag(:has_horror, "Horror") %><br><br>
+            <%= f.check_box(:has_comedy) %>
+            <%= label_tag(:has_comedy, "Comedy") %><br><br>
+            <%= f.check_box(:has_crime) %>
+            <%= label_tag(:has_crime, "Crime") %><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>Profile Details</h2>
+      <div class="field">
+        <!-- <%= f.label :profile_message %><br> -->
+        <%= f.text_field :profile_message, class:"form-control", placeholder:"Profile Message" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="actions">
+        <%= f.submit class:"submit btn-bright" %>
+      </div>
+    </div>
+  </div>
+
+
+  <% end %>
+
+  <!-- <div class="row">
+    <div class="col-12">
+      <%= link_to 'Show', @user %> |
+      <%= link_to 'Back', users_path %>
+    </div>
+  </div> -->
+
+
+</div>

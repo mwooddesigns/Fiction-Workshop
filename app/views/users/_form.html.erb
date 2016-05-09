@@ -1,0 +1,59 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="col-4 paper left-paper">
+    <div class="form-container">
+      <h2 class="center">What should we call you?</h2>
+      <!-- <input type="text" name="user" placeholder="Username" class="form-control"> -->
+      <div class="field">
+        <!-- <%= f.label :user_name %><br> -->
+        <%= f.text_field :user_name, class:"form-control", placeholder:"Username" %>
+      </div>
+      <div class="field">
+        <!-- <%= f.label :password %><br> -->
+        <%= f.password_field :password, class:"form-control", placeholder:"Password" %>
+      </div>
+      <div class="field">
+        <!-- <%= f.label :password_confirmation %><br> -->
+        <%= f.password_field :password_confirmation, class:"form-control", placeholder:"Confirm password" %>
+      </div>
+    </div>
+  </div>
+  <div class="col-4 paper middle-paper">
+    <div class="form-container">
+      <h2 class="center">What do you want to do here?</h2>
+      <div class="genre-fields fields">
+	<%= f.check_box(:is_reader) %>
+	<%= label_tag(:is_reader, "Be a Beta Reader") %><br><br>
+	<%= f.check_box(:is_editor) %>
+	<%= label_tag(:is_editor, "Be an Editor") %><br><br>
+	<%= f.check_box(:is_writer) %>
+	<%= label_tag(:is_writer, "Be a Writer") %><br><br>
+        <div class="field">
+          <!-- <%= f.label :email %><br> -->
+          <%= f.text_field :email, class:"form-control", placeholder:"Email address" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4 paper right-paper">
+    <div class="form-container">
+      <h2 class="center">Sign on the dotted line.</h2>
+      <input type="checkbox" name="job" value="terms"> Have you read and agreed to our Terms &amp; Conditions<br><br>
+      <input type="checkbox" name="job" value="edit"> Do you want to recieve email updates from us?<br>
+      <div class="actions">
+        <%= f.submit class:"submit btn-bright" %>
+      </div>
+    </div>
+  </div>
+<% end %>
