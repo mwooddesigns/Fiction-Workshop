@@ -1,0 +1,1921 @@
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Change font properties to `inherit` in all browsers (opinionated).
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ * 2. Show the overflow in Edge, Firefox, and IE.
+ */
+
+button,
+input, /* 1 */
+select { /* 2 */
+  overflow: visible;
+}
+
+/**
+ * Remove the margin in Safari.
+ * 1. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea { /* 1 */
+  margin: 0;
+}
+
+/**
+ * Remove the inheritence of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritence of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Change the cursor in all browsers (opinionated).
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+/**
+ * Restore the default cursor to disabled elements unset by the previous rule.
+ */
+
+[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the odd appearance of search inputs in Chrome and Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome on OS X and
+ * Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+body { background-color: #fff; color: #333; font-family: verdana, arial, helvetica, sans-serif; font-size: 13px; line-height: 18px; }
+
+p, ol, ul, td { font-family: verdana, arial, helvetica, sans-serif; font-size: 13px; line-height: 18px; }
+
+pre { background-color: #eee; padding: 10px; font-size: 11px; }
+
+a { color: #000; }
+
+a:visited { color: #666; }
+
+a:hover { color: #fff; }
+
+div.field, div.actions { margin-bottom: 10px; }
+
+#notice { color: green; }
+
+.field_with_errors { padding: 2px; background-color: red; display: table; }
+
+#error_explanation { width: 450px; border: 2px solid red; padding: 7px; padding-bottom: 0; margin-bottom: 20px; background-color: #f0f0f0; }
+
+#error_explanation h2 { text-align: left; font-weight: bold; padding: 5px 5px 5px 15px; font-size: 12px; margin: -7px; margin-bottom: 0px; background-color: #c00; color: #fff; }
+
+#error_explanation ul li { font-size: 12px; list-style: square; }
+/* line 1, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 34, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 39, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 43, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 49, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 57, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 68, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* Colors */
+/* Fonts */
+/* Bgein General column layout styles */
+
+.container { max-width: 1170px; width: 100%; display: block; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
+
+.row { width: 100%; display: block; }
+
+.row:after, .row:before { content: " "; /* Older browser do not support empty content */ visibility: hidden; display: block; height: 0; clear: both; }
+
+.clearfix:after, .clearfix:before { content: " "; /* Older browser do not support empty content */ visibility: hidden; display: block; height: 0; clear: both; }
+
+.responsive-img { max-width: 100%; height: auto; display: block; }
+
+.col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 { box-sizing: border-box; padding: 0 10px; float: left; position: relative; min-height: 1px; }
+
+.col-1 { width: 8.33333%; }
+
+.col-2 { width: 16.666667; }
+
+.col-3 { width: 25%; }
+
+.col-4 { width: 33.333333%; }
+
+.col-5 { width: 41.666667%; }
+
+.col-6 { width: 50%; }
+
+.col-7 { width: 58.333333%; }
+
+.col-8 { width: 66.666667%; }
+
+.col-9 { width: 75%; }
+
+.col-10 { width: 83.33333%; }
+
+.col-11 { width: 91.6666667%; }
+
+.col-12 { width: 100%; }
+
+.desktop { display: block; }
+
+.mobile { display: none; }
+
+.hidden { display: none !important; }
+
+.visible { display: block !important; }
+
+.img-responsive { max-width: 100%; height: auto; }
+
+.bold { font-weight: bold; }
+
+.italic { font-style: italic; }
+
+.left { float: left; }
+
+.right { float: right; }
+
+@media (max-width: 767px) { .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9 { clear: both; width: 100%; }
+  nav .col-1, nav .col-10, nav .col-11, nav .col-12, nav .col-2, nav .col-3, nav .col-4, nav .col-5, nav .col-6, nav .col-7, nav .col-8, nav .col-9 { clear: none; }
+  nav .col-1 { width: 8.33333%; }
+  nav .col-2 { width: 16.666667; }
+  nav .col-3 { width: 25%; }
+  nav .col-4 { width: 33.333333%; }
+  nav .col-5 { width: 41.666667%; }
+  nav .col-6 { width: 50%; }
+  nav .col-7 { width: 58.333333%; }
+  nav .col-8 { width: 66.666667%; }
+  nav .col-9 { width: 75%; }
+  nav .col-10 { width: 83.33333%; }
+  nav .col-11 { width: 91.6666667%; }
+  nav .col-12 { width: 100%; }
+  .desktop { display: none; }
+  .mobile { display: block; }
+  .mobile-left { float: left; clear: none; }
+  .mobile-right { float: right; } }
+
+.form-control { display: block; width: 100%; height: 34px; font-size: 14px; line-height: 1.428571429; color: #555; vertical-align: middle; background-color: #fff; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s; }
+
+/* Typography */
+body { font-family: "Slabo 27px", serif; font-size: 17px; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
+
+h1 { font-size: 36px; line-height: 36px; }
+
+h2 { font-size: 32px; line-height: 32px; }
+
+h3 { font-size: 28px; line-height: 28px; }
+
+h4 { font-size: 24px; line-height: 24px; }
+
+h5 { font-size: 20px; line-height: 20px; }
+
+h6 { font-size: 16px; line-height: 16px; }
+
+p { font-size: 16px; }
+
+a { text-decoration: none; }
+
+.center { text-align: center; }
+
+.align-right { text-align: right; }
+
+.small { font-size: 12px; }
+
+/* Button styles */
+.btn { display: block; background-color: #24214a; color: #fff; width: auto; border-radius: 10px; padding: 10px 15px; text-transform: uppercase; font-family: "Montserrat", sans-serif; font-size: 14px; border: 1px solid transparent; transition: 0.2s linear; text-align: center; max-width: 300px; margin: 0 auto; }
+
+.btn:visited { color: #fff; }
+
+.btn:hover { background-color: transparent; border-color: #24214a; color: #24214a; }
+
+.btn-bright { display: block; background-color: #f3544f; color: #fff; width: auto; border-radius: 10px; padding: 10px 15px; text-transform: uppercase; font-family: "Montserrat", sans-serif; font-size: 14px; border: 1px solid transparent; transition: 0.2s linear; text-align: center; max-width: 300px; margin: 0 auto; }
+
+.btn-bright:visited { color: #fff; }
+
+.btn-bright:hover { background-color: transparent; border-color: #f3544f; color: #f3544f !important; }
+
+/* Navbar Styles */
+.nav-bg { width: 100%; background-color: #fff; border-bottom: 5px solid #24214a; margin-top: 0; }
+
+.nav-bg nav { width: 100%; }
+
+.nav-bg nav ul { width: 100%; margin-top: 0; margin-bottom: 0; list-style-type: none; margin-top: 10px; }
+
+.nav-bg nav ul li { text-align: center; display: block; float: left; margin-left: 25px; }
+
+.nav-bg nav ul li a { display: block; }
+
+.nav-bg nav ul .logo { margin-top: 0; width: auto; margin-top: 4px; max-width: 180px; margin-bottom: 10px; margin-left: 0; }
+
+.nav-bg nav ul .logo-mobile { display: none; margin-top: 0; margin-bottom: 10px; margin-left: 0; width: auto; max-width: 100px; }
+
+.nav-bg nav .hamburger { position: relative; }
+
+.nav-bg nav .hamburger > div { float: right; }
+
+.nav-bg nav .hamburger > div a { color: #24214a; transition: 0.3s ease-in-out; }
+
+.nav-bg nav .hamburger > div a:hover { color: #464091; }
+
+.nav-bg nav .hamburger > div i { margin-top: 10px; font-size: 50px; }
+
+.nav-bg nav .hamburger .user-controls { position: absolute; top: 100%; right: 0; background-color: #24214a; z-index: 999; display: none; width: 230px; margin-top: 10px; border: 1px solid #fff; }
+
+.nav-bg nav .hamburger .user-controls li { display: block; float: none; margin: 0; }
+
+.nav-bg nav .hamburger .user-controls li a { color: #fff; text-align: center; transition: 0.3s ease-in-out; padding-top: 15px; padding-bottom: 15px; font-family: "Montserrat", sans-serif; text-transform: uppercase; }
+
+.nav-bg nav .hamburger .user-controls li a:hover { background-color: #fff; color: #24214a; }
+
+.nav-bg nav .user-controls { list-style-type: none; margin: 10px 0 0; padding: 0; }
+
+.nav-bg nav .user-controls li { float: right; text-align: right; margin-left: 25px; margin-bottom: 5px; }
+
+/* Home Page Template Styles */
+.search-bg { display: block; padding-top: 50px; padding-bottom: 50px; color: #fff; overflow: hidden; position: relative; background-color: #24214a; }
+
+.search-bg img.bg { position: absolute; left: 0; top: 0; width: 100%; height: auto; opacity: 0.5; -webkit-filter: saturate(0.3) brightness(0.5); filter: saturate(0.3) brightness(0.5); }
+
+.search-bg .search-content { position: relative; z-index: 2; }
+
+.search-bg h1 { font-size: 50px; margin-top: 0; }
+
+.search-bg p.subheading { margin-top: 0; margin-bottom: 40px; font-size: 18px; }
+
+.search-bg .search-form { display: block; margin: 0 auto; width: 100%; max-width: 600px; background-color: #fff; color: #000; margin-top: 30px; padding: 10px 20px; }
+
+.search-bg .search-form .fields { text-align: left; width: auto; margin: 0 auto; display: inline-block; clear: both; }
+
+.search-bg .search-form .service-fields input { margin-bottom: 25px; }
+
+.search-bg .search-form .length-fields input { margin-bottom: 15px; }
+
+.search-bg .search-form .submit { background-color: #f3544f; color: #fff; font-family: "Montserrat", sans-serif; text-transform: uppercase; padding: 10px 30px; border: none; }
+
+.how-works { padding-top: 50px; }
+
+.how-works .fa { font-size: 80px; color: #f3544f; }
+
+.how-works .process { margin-bottom: 30px; }
+
+footer { margin-top: 60px; padding: 10px 10px 40px; border-top: 5px solid #24214a; }
+
+footer p { margin-top: 15px; }
+
+footer .social ul { width: 100%; text-align: center; padding: 0; margin: 0; }
+
+footer .social ul li { display: inline-block; width: 50px; text-align: center; }
+
+footer .social ul li a { -webkit-transition: 0.4s ease-in-out; transition: 0.4s ease-in-out; }
+
+footer .social ul li a:hover { -webkit-filter: brightness(1.5); filter: brightness(1.5); }
+
+footer .social ul li#pinterest a:active, footer .social ul li#pinterest a:hover, footer .social ul li#pinterest a:link, footer .social ul li#pinterest a:visited { color: #bd081c; font-size: 40px; }
+
+footer .social ul li#facebook a:active, footer .social ul li#facebook a:hover, footer .social ul li#facebook a:link, footer .social ul li#facebook a:visited { color: #3b5998; font-size: 40px; }
+
+footer .social ul li#email a:active, footer .social ul li#email a:hover, footer .social ul li#email a:link, footer .social ul li#email a:visited { color: #4183c4; font-size: 40px; }
+
+/* Log-in pages styles */
+.log-in-bg { background-color: #24214a; padding-top: 60px; padding-bottom: 80px; margin-bottom: -60px; }
+
+.log-in-bg h1 { margin-top: 20px; margin-bottom: 40px; color: #24214a; }
+
+.log-in-bg h1.white { color: #fff; }
+
+.log-in-bg .form-bg { display: block; margin: 0 auto; max-width: 320px; padding: 15px 40px 25px; background-color: #fff; position: relative; z-index: 1; border: 1px solid #ccc; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+
+.log-in-bg .form-bg .form-container { transform: rotateZ(-4deg); }
+
+.log-in-bg .form-bg:before { content: ""; top: 0; left: 0; position: absolute; width: 100%; height: 100%; display: block; z-index: -1; transform: rotateZ(-4deg); background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+
+.log-in-bg .form-bg:after { content: ""; top: 0; left: 0; position: absolute; width: 100%; height: 100%; display: block; z-index: -2; transform: rotateZ(3deg); background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5); }
+
+.log-in-bg .form-bg .btn { text-align: center; margin-top: 20px; }
+
+.log-in-bg .form-bg .facebook { background-color: #3b5998; }
+
+.log-in-bg .form-bg .facebook:hover { color: #fff; border-color: #3b5998; }
+
+.log-in-bg .form-bg .google { background-color: #f3544f; }
+
+.log-in-bg .form-bg .google:hover { color: #fff; border-color: #f3544f; }
+
+.log-in-bg .form-bg form input { width: 100%; padding-left: 10px; margin-left: -10px; padding-top: 5px; padding-bottom: 5px; border-radius: 10px; outline: none; box-shadow: 0 0 10px 1px transparent; transition: 0.2s ease-in-out; }
+
+.log-in-bg .form-bg form input:focus { box-shadow: 0 0 10px 1px #24214a; }
+
+.log-in-bg .form-bg form .submit { width: auto; display: block; margin: 0 auto; padding: 10px 30px; background-color: #f3544f; color: #fff; font-family: "Montserrat", sans-serif; text-transform: uppercase; border: 1px solid transparent; }
+
+.log-in-bg .form-bg form .submit:hover { border-color: #f3544f; color: #f3544f; background-color: transparent; }
+
+.log-in-bg .form-bg form .submit:focus { box-shadow: none; }
+
+.log-in-bg .paper { padding: 20px; }
+
+.log-in-bg .paper .form-container { background-color: #fff; border: 1px solid #ccc; box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5); display: block; padding: 20px; }
+
+.log-in-bg .paper .form-container h2 { font-size: 20px; }
+
+.log-in-bg .paper.left-paper input { width: 100%; box-sizing: border-box; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 10px; margin-bottom: 20px; outline: none; box-shadow: 0 0 10px 1px transparent; transition: 0.2s ease-in-out; }
+
+.log-in-bg .paper.left-paper input:focus { box-shadow: 0 0 10px 1px #24214a; }
+
+.log-in-bg .paper.middle-paper .form-control { width: 100%; box-sizing: border-box; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; border-radius: 10px; margin-top: 5px; outline: none; box-shadow: 0 0 10px 1px transparent; transition: 0.2s ease-in-out; }
+
+.log-in-bg .paper.middle-paper .form-control:focus { box-shadow: 0 0 10px 1px #24214a; }
+
+.log-in-bg .paper.right-paper .submit { background-color: #f3544f; color: #fff; border: 1px solid transparent; padding: 10px 20px; display: block; margin: 15px auto 0; text-transform: uppercase; font-family: "Montserrat", sans-serif; transition: 0.2s linear; border-radius: 10px; }
+
+.log-in-bg .paper.right-paper .submit:hover { background-color: transparent; color: #f3544f; border-color: #f3544f; }
+
+footer.login { margin-top: 0; }
+
+.search-results { margin-top: 50px; }
+
+.search-results .results { width: 70%; float: left; box-sizing: border-box; padding-right: 15px; }
+
+.search-results .results .person { border-bottom: 1px solid #24214a; padding-bottom: 10px; margin-bottom: 30px; }
+
+.search-results .results .person .profile { border-radius: 50%; width: 100%; max-width: 150px; display: block; margin: 0 auto; }
+
+.search-results .results .person h2 { margin-top: 0; margin-bottom: 0; }
+
+.search-results .results .person h3 { font-size: 16px; }
+
+.search-results .results .person p.bold { margin-top: 0; margin-bottom: 0; }
+
+.search-results .results .person ul { list-style-type: none; margin-left: -40px; }
+
+.search-results .results .person .btn, .search-results .results .person .btn-bright { text-align: center; }
+
+.search-results .results .person .btn { margin-bottom: 10px; }
+
+.search-results .sidebar-search { width: 30%; float: right; min-height: 500px; box-sizing: border-box; padding-left: 15px; }
+
+.search-results .sidebar-search .criteria { margin-bottom: 20px; padding-bottom: 20px; }
+
+.search-results .sidebar-search .submit { margin: 0 auto; }
+
+/* USER PROFILE PAGE STYLES */
+.user-profile .user-info { padding-bottom: 30px; }
+
+.user-profile .user-info .profile-picture { border-radius: 50%; display: block; margin: 20px auto; }
+
+.user-profile .user-info .description { margin-bottom: 30px; }
+
+.user-profile .recent-works { margin-bottom: 30px; }
+
+.user-profile .recent-works .work p { margin-bottom: 40px; }
+
+.user-profile .reviews .review { margin-bottom: 40px; }
+
+.user-profile .reviews .review .profile-picture { max-width: 150px; border-radius: 50%; margin: 0 auto; display: block; }
+
+/* MEDIA QUERIES */
+@media (max-width: 991px) { .nav-bg nav ul .logo { display: none; }
+  .nav-bg nav ul .logo-mobile { display: block; }
+  .search-bg .bg { display: none; }
+  .nav-bg nav ul li a { margin-top: 4px; }
+  .search-results .sidebar-search { float: none; width: 100%; }
+  .search-results .sidebar-search .criteria { float: left; width: 33.33%; }
+  .search-results .results { width: 100%; clear: both; float: none; } }
+
+@media (max-width: 767px) { .search-bg h1 { font-size: 30px; }
+  .search-bg .bg { display: none; }
+  .search-bg .search-form { max-width: 205px; }
+  .nav-bg nav ul li a { margin-top: 0; }
+  .person .mobile-left { max-width: 50%; } }
+
+@media (max-width: 400px) { .search-bg h1 { font-size: 25px; } }
+/* Colors */
+/* Fonts */
+/* Bgein General column layout styles */
+/* line 9, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.container {
+  max-width: 1170px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* line 17, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.row {
+  width: 100%;
+  display: block;
+}
+/* line 20, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.row:after, .row:before {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 31, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.clearfix:after, .clearfix:before {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 41, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* line 46, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9 {
+  box-sizing: border-box;
+  padding: 0 10px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+/* line 64, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-1 {
+  width: 8.33333%;
+}
+
+/* line 67, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-2 {
+  width: 16.666667;
+}
+
+/* line 70, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 73, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-4 {
+  width: 33.333333%;
+}
+
+/* line 76, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-5 {
+  width: 41.666667%;
+}
+
+/* line 79, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 82, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-7 {
+  width: 58.333333%;
+}
+
+/* line 85, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-8 {
+  width: 66.666667%;
+}
+
+/* line 88, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 91, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-10 {
+  width: 83.33333%;
+}
+
+/* line 94, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-11 {
+  width: 91.6666667%;
+}
+
+/* line 97, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 100, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.desktop {
+  display: block;
+}
+
+/* line 103, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.mobile {
+  display: none;
+}
+
+/* line 106, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 109, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.visible {
+  display: block !important;
+}
+
+/* line 112, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 116, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 119, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 122, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.left {
+  float: left;
+}
+
+/* line 125, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.right {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  /* line 129, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9 {
+    clear: both;
+    width: 100%;
+  }
+
+  /* line 145, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-1,
+  nav .col-10,
+  nav .col-11,
+  nav .col-12,
+  nav .col-2,
+  nav .col-3,
+  nav .col-4,
+  nav .col-5,
+  nav .col-6,
+  nav .col-7,
+  nav .col-8,
+  nav .col-9 {
+    clear: none;
+  }
+  /* line 159, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-1 {
+    width: 8.33333%;
+  }
+  /* line 162, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-2 {
+    width: 16.666667;
+  }
+  /* line 165, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-3 {
+    width: 25%;
+  }
+  /* line 168, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-4 {
+    width: 33.333333%;
+  }
+  /* line 171, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-5 {
+    width: 41.666667%;
+  }
+  /* line 174, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-6 {
+    width: 50%;
+  }
+  /* line 177, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-7 {
+    width: 58.333333%;
+  }
+  /* line 180, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-8 {
+    width: 66.666667%;
+  }
+  /* line 183, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-9 {
+    width: 75%;
+  }
+  /* line 186, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-10 {
+    width: 83.33333%;
+  }
+  /* line 189, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-11 {
+    width: 91.6666667%;
+  }
+  /* line 192, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  nav .col-12 {
+    width: 100%;
+  }
+
+  /* line 196, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .desktop {
+    display: none;
+  }
+
+  /* line 199, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 202, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .mobile-left {
+    float: left;
+    clear: none;
+  }
+
+  /* line 206, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .mobile-right {
+    float: right;
+  }
+}
+/* line 210, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+
+/* Typography */
+/* line 227, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+body {
+  font-family: "Slabo 27px", serif;
+  font-size: 17px;
+}
+
+/* line 231, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 239, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h1 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* line 243, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h2 {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+/* line 247, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h3 {
+  font-size: 28px;
+  line-height: 28px;
+}
+
+/* line 251, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h4 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* line 255, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h5 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* line 259, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+h6 {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* line 263, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+p {
+  font-size: 16px;
+}
+
+/* line 266, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 269, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.center {
+  text-align: center;
+}
+
+/* line 272, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 275, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.small {
+  font-size: 12px;
+}
+
+/* Button styles */
+/* line 280, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn {
+  display: block;
+  background-color: #24214a;
+  color: #fff;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 295, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn:visited {
+  color: #fff;
+}
+/* line 298, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn:hover {
+  background-color: transparent;
+  border-color: #24214a;
+  color: #24214a;
+}
+
+/* line 304, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn-bright {
+  display: block;
+  background-color: #f3544f;
+  color: #fff;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: 0.2s linear;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 319, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn-bright:visited {
+  color: #fff;
+}
+/* line 322, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.btn-bright:hover {
+  background-color: transparent;
+  border-color: #f3544f;
+  color: #f3544f !important;
+}
+
+/* Navbar Styles */
+/* line 329, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 5px solid #24214a;
+  margin-top: 0;
+}
+/* line 334, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav {
+  width: 100%;
+}
+/* line 336, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav ul {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  margin-top: 10px;
+}
+/* line 342, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav ul li {
+  text-align: center;
+  display: block;
+  float: left;
+  margin-left: 25px;
+}
+/* line 347, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav ul li a {
+  display: block;
+}
+/* line 351, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav ul .logo {
+  margin-top: 0;
+  width: auto;
+  margin-top: 4px;
+  max-width: 180px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+/* line 359, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav ul .logo-mobile {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  width: auto;
+  max-width: 100px;
+}
+/* line 368, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger {
+  position: relative;
+}
+/* line 370, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger > div {
+  float: right;
+}
+/* line 372, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger > div a {
+  color: #24214a;
+  transition: 0.3s ease-in-out;
+}
+/* line 375, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger > div a:hover {
+  color: #464091;
+}
+/* line 379, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger > div i {
+  margin-top: 10px;
+  font-size: 50px;
+}
+/* line 384, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger .user-controls {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #24214a;
+  z-index: 999;
+  display: none;
+  width: 230px;
+  margin-top: 10px;
+  border: 1px solid #fff;
+}
+/* line 394, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger .user-controls li {
+  display: block;
+  float: none;
+  margin: 0;
+}
+/* line 398, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger .user-controls li a {
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+/* line 406, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .hamburger .user-controls li a:hover {
+  background-color: #fff;
+  color: #24214a;
+}
+/* line 414, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .user-controls {
+  list-style-type: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+/* line 418, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.nav-bg nav .user-controls li {
+  float: right;
+  text-align: right;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+/* Home Page Template Styles */
+/* line 428, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  background-color: #24214a;
+}
+/* line 436, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg img.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  -webkit-filter: saturate(0.3) brightness(0.5);
+  filter: saturate(0.3) brightness(0.5);
+}
+/* line 446, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-content {
+  position: relative;
+  z-index: 2;
+}
+/* line 450, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+/* line 454, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg p.subheading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+/* line 459, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-form {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  color: #000;
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+/* line 468, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-form .fields {
+  text-align: left;
+  width: auto;
+  margin: 0 auto;
+  display: inline-block;
+  clear: both;
+}
+/* line 476, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-form .service-fields input {
+  margin-bottom: 25px;
+}
+/* line 481, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-form .length-fields input {
+  margin-bottom: 15px;
+}
+/* line 485, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-bg .search-form .submit {
+  background-color: #f3544f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: none;
+}
+
+/* line 495, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.how-works {
+  padding-top: 50px;
+}
+/* line 497, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.how-works .fa {
+  font-size: 80px;
+  color: #f3544f;
+}
+/* line 501, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.how-works .process {
+  margin-bottom: 30px;
+}
+
+/* line 505, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer {
+  margin-top: 60px;
+  padding: 10px 10px 40px;
+  border-top: 5px solid #24214a;
+}
+/* line 509, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer p {
+  margin-top: 15px;
+}
+/* line 513, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* line 518, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+/* line 522, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li a {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+/* line 526, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li a:hover {
+  -webkit-filter: brightness(1.5);
+  filter: brightness(1.5);
+}
+/* line 531, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li#pinterest a:active,
+footer .social ul li#pinterest a:hover,
+footer .social ul li#pinterest a:link,
+footer .social ul li#pinterest a:visited {
+  color: #bd081c;
+  font-size: 40px;
+}
+/* line 540, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li#facebook a:active,
+footer .social ul li#facebook a:hover,
+footer .social ul li#facebook a:link,
+footer .social ul li#facebook a:visited {
+  color: #3b5998;
+  font-size: 40px;
+}
+/* line 549, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer .social ul li#email a:active,
+footer .social ul li#email a:hover,
+footer .social ul li#email a:link,
+footer .social ul li#email a:visited {
+  color: #4183c4;
+  font-size: 40px;
+}
+
+/* Log-in pages styles */
+/* line 562, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg {
+  background-color: #24214a;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin-bottom: -60px;
+}
+/* line 567, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg h1 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #24214a;
+}
+/* line 571, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg h1.white {
+  color: #fff;
+}
+/* line 575, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 15px 40px 25px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 585, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .form-container {
+  transform: rotateZ(-4deg);
+}
+/* line 588, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  transform: rotateZ(-4deg);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 602, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -2;
+  transform: rotateZ(3deg);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 616, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 620, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .facebook {
+  background-color: #3b5998;
+}
+/* line 622, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .facebook:hover {
+  color: #fff;
+  border-color: #3b5998;
+}
+/* line 627, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .google {
+  background-color: #f3544f;
+}
+/* line 629, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg .google:hover {
+  color: #fff;
+  border-color: #f3544f;
+}
+/* line 635, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg form input {
+  width: 100%;
+  padding-left: 10px;
+  margin-left: -10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px 1px transparent;
+  transition: 0.2s ease-in-out;
+}
+/* line 645, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg form input:focus {
+  box-shadow: 0 0 10px 1px #24214a;
+}
+/* line 649, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg form .submit {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: #f3544f;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+/* line 659, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg form .submit:hover {
+  border-color: #f3544f;
+  color: #f3544f;
+  background-color: transparent;
+}
+/* line 664, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .form-bg form .submit:focus {
+  box-shadow: none;
+}
+/* line 670, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper {
+  padding: 20px;
+}
+/* line 672, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper .form-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+  display: block;
+  padding: 20px;
+}
+/* line 678, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper .form-container h2 {
+  font-size: 20px;
+}
+/* line 683, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.left-paper input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 0 10px 1px transparent;
+  transition: 0.2s ease-in-out;
+}
+/* line 694, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.left-paper input:focus {
+  box-shadow: 0 0 10px 1px #24214a;
+}
+/* line 700, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.middle-paper .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-top: 5px;
+  outline: none;
+  box-shadow: 0 0 10px 1px transparent;
+  transition: 0.2s ease-in-out;
+}
+/* line 711, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.middle-paper .form-control:focus {
+  box-shadow: 0 0 10px 1px #24214a;
+}
+/* line 717, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.right-paper .submit {
+  background-color: #f3544f;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  display: block;
+  margin: 15px auto 0;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s linear;
+  border-radius: 10px;
+}
+/* line 728, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.log-in-bg .paper.right-paper .submit:hover {
+  background-color: transparent;
+  color: #f3544f;
+  border-color: #f3544f;
+}
+
+/* line 737, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+footer.login {
+  margin-top: 0;
+}
+
+/* line 740, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results {
+  margin-top: 50px;
+}
+/* line 742, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results {
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+/* line 747, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person {
+  border-bottom: 1px solid #24214a;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+/* line 751, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person .profile {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 758, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 762, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person h3 {
+  font-size: 16px;
+}
+/* line 765, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person p.bold {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 769, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+/* line 773, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person .btn,
+.search-results .results .person .btn-bright {
+  text-align: center;
+}
+/* line 777, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .results .person .btn {
+  margin-bottom: 10px;
+}
+/* line 782, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .sidebar-search {
+  width: 30%;
+  float: right;
+  min-height: 500px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+/* line 788, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .sidebar-search .criteria {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 792, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.search-results .sidebar-search .submit {
+  margin: 0 auto;
+}
+
+/* USER PROFILE PAGE STYLES */
+/* line 799, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .user-info {
+  padding-bottom: 30px;
+}
+/* line 801, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .user-info .profile-picture {
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+/* line 806, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .user-info .description {
+  margin-bottom: 30px;
+}
+/* line 810, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .recent-works {
+  margin-bottom: 30px;
+}
+/* line 813, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .recent-works .work p {
+  margin-bottom: 40px;
+}
+/* line 819, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .reviews .review {
+  margin-bottom: 40px;
+}
+/* line 821, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+.user-profile .reviews .review .profile-picture {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  /* line 833, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .nav-bg nav ul .logo {
+    display: none;
+  }
+  /* line 836, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .nav-bg nav ul .logo-mobile {
+    display: block;
+  }
+
+  /* line 841, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-bg .bg {
+    display: none;
+  }
+
+  /* line 845, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .nav-bg nav ul li a {
+    margin-top: 4px;
+  }
+
+  /* line 849, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-results .sidebar-search {
+    float: none;
+    width: 100%;
+  }
+  /* line 852, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-results .sidebar-search .criteria {
+    float: left;
+    width: 33.33%;
+  }
+  /* line 857, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-results .results {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  /* line 866, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-bg h1 {
+    font-size: 30px;
+  }
+  /* line 869, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-bg .bg {
+    display: none;
+  }
+  /* line 872, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-bg .search-form {
+    max-width: 205px;
+  }
+
+  /* line 876, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .nav-bg nav ul li a {
+    margin-top: 0;
+  }
+
+  /* line 879, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .person .mobile-left {
+    max-width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  /* line 885, C:/Users/Michael/Desktop/Code Stuff/Web Dev/fiction-workshop/app/assets/stylesheets/style.scss */
+  .search-bg h1 {
+    font-size: 25px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
